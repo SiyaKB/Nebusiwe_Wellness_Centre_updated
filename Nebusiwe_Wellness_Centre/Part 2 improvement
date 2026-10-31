@@ -1,0 +1,59 @@
+#Part 2 improvements
+
+From the feed back i recieved from my lecturer i was supposed to ensure i have a README document so i added that
+
+I rebuilt the home page and all the tabs
+
+I fixed up the pictures on the gallary page
+
+I rebuilt the form and added form validation
+
+created the following:
+• js/data.js: clinic details, opening hours, branches and the services list in one place.
+
+• js/main.js: features used on every page (menu, status, accordion, tabs, reveal, back-to-top, share links).
+
+• js/services.js: dynamic services list.
+
+• js/gallery.js: lightbox.
+
+• js/map.js: interactive map.
+
+• js/forms.js: validation and submission for both forms.
+
+I rewrote the stylesheet and organised it along with adding comments and design tokens
+
+New SEO and technical files
+• robots.txt, sitemap.xml, .htaccess, favicon.png, images/apple-touch-icon.png, and SEO-and-Launch-Notes.md.
+
+Interactive elements
+Accordions, tabs or modals. All three were added:
+• Accordion: the FAQ on the home page. One panel is open at a time, with a smooth height animation, and it is keyboard accessible.
+• Tabs: Our mission, Our vision and Our values on the About page. They support arrow keys, Home and End, and deep links such as about.html#vision.
+• Modal: a Details pop-up for each service, built on the native dialog element so focus is trapped and Esc closes it.
+
+Animations and transitions. 
+CSS keyframes and transitions for the home page entrance, accordion, tabs, modal, service cards, gallery hover, form errors and buttons. A JavaScript scroll reveal (IntersectionObserver) is used on the home page tiles. Reduced-motion preferences are respected.
+
+On-page SEO
+• Keyword research: keywords such as clinic in Springs, family clinic, baby wellness, HIV testing and counselling, pap smear, circumcision, travel clinic and workplace health were worked into headings and copy. The list is in the launch notes. The final keyword check with Google Keyword Planner is left for the clinic.
+• Title tags and meta descriptions: unique for every page, with titles under about 60 characters and descriptions between about 120 and 160.
+• Header tags: exactly one h1 per page, with h2 and h3 below it.
+• Image optimisation: descriptive file names, meaningful alt text on every image, width and height attributes, lazy loading.
+• URL structure: clean, descriptive page names; the misspelled gallary.html is now gallery.html.
+• Internal linking: links between home, services, enquiry, contact and about inside the body copy, not only in the menu.
+• Mobile friendliness: the original pages had no viewport tag. It was added to every page, along with a collapsing mobile menu and responsive layouts.
+• Extras: Open Graph and Twitter card tags, a language tag set to en-ZA, and MedicalClinic structured data (name, phone, email, address, geo position and opening hours) on the home and contact pages.
+
+Off-page SEO
+Backlinks, social media and local SEO are actions for the clinic rather than code. A step-by-step checklist is in SEO-and-Launch-Notes.md, covering Google Business Profile, consistent name, address and phone details, reviews, local directories, backlink ideas and social media. In the site itself, share buttons for Facebook, WhatsApp and X were added to every footer.
+
+Additional additions
+• robots.txt: allows crawling and points to the sitemap.
+• sitemap.xml: lists all six pages with priorities.
+• Page speed: video compressed and only loaded when played, images converted to WebP, scripts deferred, lazy loading, and compression and browser caching rules in .htaccess.
+• Security: a Content-Security-Policy on every page; security headers in .htaccess; no use of innerHTML with visitor input, so nothing typed into a form can inject code; a hidden spam-trap field on both forms; a short delay against double submissions; external links use rel="noopener noreferrer"; and the old page names redirect to the new ones.
+
+Form elements. Inputs, selects, a date input, a number input, textareas and a consent checkbox, each with a visible label.
+Form validation. Three layers: HTML5 attributes (required, type, pattern, min, max, minlength, maxlength); JavaScript rules for names, South African phone formats, dates that are not in the past and within 90 days, and clinic opening hours; and friendly messages. Specific formats checked include email, South African phone numbers (for example 082 123 4567 or +27 82 123 4567), dates, name characters and message lengths.
+
