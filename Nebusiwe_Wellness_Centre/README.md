@@ -16,7 +16,9 @@ Key features and functionality • Homepage: clinic overview, hero banner with k
 
 Timeline and milestones:
 
-image
+<img width="635" height="293" alt="image" src="https://github.com/user-attachments/assets/777de964-2d27-43d2-81ff-48d09fcba057" />
+
+
 Part1 detailes:
 
 Added basic HTML tags, created 4 webpages, added basic information and added basic styling.
