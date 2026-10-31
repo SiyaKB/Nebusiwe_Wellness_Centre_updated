@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-ZA" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact and Find Us in Springs | Nebusiwe Wellness Centre</title>
+    <meta name="description" content="Contact Nebusiwe Wellness Centre in Springs. Call, send a message, check opening hours and find us on an interactive map.">
+    <meta name="theme-color" content="#2f6f4f">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data: https://tile.openstreetmap.org https://*.tile.openstreetmap.org; media-src 'self'; connect-src 'self' https://formspree.io; object-src 'none'; base-uri 'self'; form-action 'self' mailto: https://formspree.io">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Nebusiwe Wellness Centre">
+    <meta property="og:title" content="Contact and Find Us in Springs | Nebusiwe Wellness Centre">
+    <meta property="og:description" content="Contact Nebusiwe Wellness Centre in Springs. Call, send a message, check opening hours and find us on an interactive map.">
+    <meta property="og:image" content="https://www.example.com/images/doctor-examining-patient.webp">
+    <meta property="og:locale" content="en_ZA">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "name": "Nebusiwe Wellness Centre",
+  "description": "Primary healthcare and wellness clinic in Springs, Gauteng.",
+  "image": "https://www.example.com/images/logo.webp",
+  "telephone": "+27116343030",
+  "email": "busiwane@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1 5th Avenue, Bakerton",
+    "addressLocality": "Springs",
+    "addressRegion": "Gauteng",
+    "addressCountry": "ZA"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -26.22298,
+    "longitude": 28.46777
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "09:00",
+      "closes": "13:00"
+    }
+  ],
+  "areaServed": [
+    "Springs",
+    "Delmas",
+    "Gauteng"
+  ]
+}
+    </script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header>
+        <a class="brand" href="home.html" aria-label="Nebusiwe Wellness Centre, home">
+            <img src="images/logo.webp" alt="Nebusiwe Wellness Centre logo" width="108" height="44">
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav id="site-nav" aria-label="Main">
+                <a href="home.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="enquiry.html">Enquiry</a>
+                <a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+    </header>
+    <main id="main">
+        <div class="page-head">
+            <h1>Contact Nebusiwe Wellness Centre</h1>
+            <p class="lead">Questions, feedback or ideas for your workplace? Send us a message, call us, or visit one of our branches.</p>
+        </div>
+
+        <section class="section form-layout" aria-label="Contact details and message form">
+            <div>
+                <div class="form-card">
+                    <form id="contact-form" action="mailto:busiwane@gmail.com" method="post" enctype="text/plain">
+                        <div class="form-summary" role="alert" tabindex="-1" hidden></div>
+                        <div class="form-grid">
+                    <div class="field">
+                        <label for="con-name">Full name <span class="req" aria-hidden="true">*</span></label>
+                        <input type="text" id="con-name" name="Full name" data-key="name" autocomplete="name" required minlength="2" maxlength="60" data-validate data-rule="name" data-label="your full name" data-missing="Please enter your full name." aria-describedby="con-name-error">
+                        <p class="field-error" id="con-name-error" hidden></p>
+                    </div>
+                    <div class="field">
+                        <label for="con-email">Email address <span class="req" aria-hidden="true">*</span></label>
+                        <input type="email" id="con-email" name="Email" data-key="email" autocomplete="email" required maxlength="120" data-validate data-label="your email address" data-missing="Please enter your email address so we can reply." aria-describedby="con-email-error">
+                        <p class="field-error" id="con-email-error" hidden></p>
+                    </div>
+                    <div class="field">
+                        <label for="con-phone">Phone number <span class="hint-inline">(optional)</span></label>
+                        <input type="tel" id="con-phone" name="Phone" data-key="phone" autocomplete="tel" inputmode="tel" pattern="(\+27\s?|0)[1-9][0-9]\s?[0-9]{3}\s?[0-9]{4}" data-validate data-label="your phone number" data-pattern-msg="Enter a South African number, like 082 123 4567 or +27 82 123 4567." aria-describedby="con-phone-error con-phone-hint">
+                        <p class="hint" id="con-phone-hint">South African number, for example 082 123 4567.</p>
+                        <p class="field-error" id="con-phone-error" hidden></p>
+                    </div>
+                    <div class="field">
+                        <label for="con-type">Type of message <span class="req" aria-hidden="true">*</span></label>
+                        <select id="con-type" name="Type of message" data-key="type" required data-validate data-label="a message type" data-missing="Please choose the type of message." aria-describedby="con-type-error"><option value="">Choose one</option><option>General question</option><option>Feedback or compliment</option><option>Complaint</option><option>Workplace health for my business</option><option>Something else</option></select>
+                        <p class="field-error" id="con-type-error" hidden></p>
+                    </div>
+                    <div class="field full">
+                        <label for="con-subject">Subject <span class="req" aria-hidden="true">*</span></label>
+                        <input type="text" id="con-subject" name="Subject" data-key="subject" required minlength="3" maxlength="80" data-validate data-rule="subject" data-label="a subject" data-missing="Please add a short subject." aria-describedby="con-subject-error">
+                        <p class="field-error" id="con-subject-error" hidden></p>
+                    </div>
+                    <div class="field full">
+                        <label for="con-message">Message <span class="req" aria-hidden="true">*</span></label>
+                        <textarea id="con-message" name="Message" data-key="message" rows="7" required minlength="20" maxlength="1000" data-validate data-counter data-label="your message" data-missing="Please type your message." aria-describedby="con-message-error con-message-hint"></textarea>
+                        <p class="hint" id="con-message-hint"><span id="con-message-counter" aria-live="polite"></span></p>
+                        <p class="field-error" id="con-message-error" hidden></p>
+                    </div>
+                    <div class="field check full">
+                        <input type="checkbox" id="con-consent" name="Consent" data-key="consent" required data-validate data-label="consent" data-missing="Please tick the box so we may use your details to reply." aria-describedby="con-consent-error">
+                        <label for="con-consent">I agree that Nebusiwe Wellness Centre may use these details to reply to my message.</label>
+                        <p class="field-error" id="con-consent-error" hidden></p>
+                    </div>
+                            <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Prepare my email</button>
+                        <p class="form-status" role="status" aria-live="polite"></p>
+                    </form>
+                    <noscript><p class="notice">Without JavaScript the form opens your email app directly. You can also write to <a href="mailto:busiwane@gmail.com">busiwane@gmail.com</a>.</p></noscript>
+                </div>
+                <section id="contact-preview" class="form-card response-panel" hidden>
+                    <h2>Check your email, then send it</h2>
+                    <p>Your message is ready. Select <strong>Open in my email app</strong> and press send there. We have not sent anything yet.</p>
+                    <div class="email-preview" id="preview-text"></div>
+                    <div class="btn-row">
+                        <a class="btn btn-primary" id="send-email" href="mailto:busiwane@gmail.com">Open in my email app</a>
+                        <button class="btn btn-ghost" type="button" id="copy-email">Copy email text</button>
+                        <button class="btn btn-ghost" type="button" id="edit-email">Edit my message</button>
+                    </div>
+                </section>
+            </div>
+            <aside>
+                <div class="aside-box">
+                    <h2>Reach us</h2>
+                    <ul class="contact-list">
+                        <li><strong>Phone</strong><a href="tel:+27116343030">011 634 3030</a></li>
+                        <li><strong>Email</strong><a href="mailto:busiwane@gmail.com">busiwane@gmail.com</a></li>
+                        <li><strong>Springs (Bakerton) branch</strong>No. 1 5th Avenue, Bakerton, Springs</li>
+                     
+                    </ul>
+                </div>
+                <div class="aside-box">
+                    <table class="hours">
+                <caption>Opening hours (South African time)</caption>
+                <tbody>
+                    <tr data-days="1,2,3,4,5"><th scope="row">Monday to Friday</th><td>08:00 to 17:00</td></tr>
+                    <tr data-days="0,6"><th scope="row">Saturday and Sunday</th><td>09:00 to 13:00</td></tr>
+                    <tr><th scope="row">Public holidays</th><td>09:00 to 13:00</td></tr>
+                </tbody>
+            </table>
+                </div>
+            </aside>
+        </section>
+
+        <section class="section" id="map-section" aria-labelledby="map-title">
+            <h2 id="map-title">Find us on the map</h2>
+            <p>Select a pin for directions, or let us show you the closest branch. Your location is only used in your browser and is never sent to us.</p>
+            <div class="map-tools" id="map-tools">
+                <button class="btn btn-sun btn-small" type="button" id="locate-me">How far am I?</button>
+            </div>
+            <p class="map-result" id="map-result" role="status" aria-live="polite"></p>
+            <div id="map" role="region" aria-label="Map showing the Springs branch"></div>
+            <noscript><p class="notice">The map needs JavaScript. <a href="https://www.google.com/maps/dir/?api=1&amp;destination=-26.22298,28.46777">Get directions to our Springs branch</a>.</p></noscript>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h2>Nebusiwe Wellness Centre</h2>
+                <p>Accessible, affordable primary healthcare for individuals, families and businesses in Springs and the communities around it.</p>
+            </div>
+            <div>
+                <h2>Explore</h2>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Get in touch</h2>
+                <ul>
+                    <li><a href="tel:+27116343030">011 634 3030</a></li>
+                    <li><a href="mailto:busiwane@gmail.com">busiwane@gmail.com</a></li>
+                    <li>Mon to Fri 08:00 to 17:00<br>Sat, Sun and public holidays 09:00 to 13:00</li>
+                </ul>
+                <p class="share">Share this page:
+                    <a data-share="facebook" href="https://www.facebook.com/sharer/sharer.php" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a data-share="whatsapp" href="https://wa.me/" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                    <a data-share="x" href="https://twitter.com/intent/tweet" target="_blank" rel="noopener noreferrer">X</a>
+                </p>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 Nebusiwe Wellness Centre &middot; ST10531223</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js" defer></script>
+    <script src="js/data.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/forms.js" defer></script>
+    <script src="js/map.js" defer></script>
+</body>
+</html>

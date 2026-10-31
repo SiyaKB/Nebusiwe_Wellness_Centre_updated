@@ -1,0 +1,5 @@
+# Tells search engines what they may crawl.
+User-agent: *
+Allow: /
+
+Sitemap: https://www.example.com/sitemap.xml

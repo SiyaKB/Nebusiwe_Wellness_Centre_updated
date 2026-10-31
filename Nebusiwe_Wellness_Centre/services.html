@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-ZA" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clinic Services and Prices | Nebusiwe Wellness Centre</title>
+    <meta name="description" content="Search clinic services in Springs: consultations, baby wellness, antenatal care, HIV testing, pap smears, circumcision, travel clinic and more, with prices.">
+    <meta name="theme-color" content="#2f6f4f">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data: https://tile.openstreetmap.org https://*.tile.openstreetmap.org; media-src 'self'; connect-src 'self' https://formspree.io; object-src 'none'; base-uri 'self'; form-action 'self' mailto: https://formspree.io">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Nebusiwe Wellness Centre">
+    <meta property="og:title" content="Clinic Services and Prices | Nebusiwe Wellness Centre">
+    <meta property="og:description" content="Search clinic services in Springs: consultations, baby wellness, antenatal care, HIV testing, pap smears, circumcision, travel clinic and more, with prices.">
+    <meta property="og:image" content="https://www.example.com/images/services-and-hours-poster.webp">
+    <meta property="og:locale" content="en_ZA">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header>
+        <a class="brand" href="home.html" aria-label="Nebusiwe Wellness Centre, home">
+            <img src="images/logo.webp" alt="Nebusiwe Wellness Centre logo" width="108" height="44">
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav id="site-nav" aria-label="Main">
+                <a href="home.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="services.html" aria-current="page">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="enquiry.html">Enquiry</a>
+                <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main id="main">
+        <div class="page-head">
+            <h1>Clinic services in Springs</h1>
+            <p class="lead">Search our services, filter by type and see what each one costs. When you find what you need, send an <a href="enquiry.html">enquiry</a> for an estimate.</p>
+        </div>
+
+        <section class="section" aria-label="Services list">
+            <div class="toolbar">
+                <div class="field">
+                    <label for="service-search">Search services</label>
+                    <input type="search" id="service-search" placeholder="Try baby, test or travel" autocomplete="off">
+                </div>
+                <div class="field">
+                    <label for="service-sort">Sort by</label>
+                    <select id="service-sort">
+                        <option value="name">Name (A to Z)</option>
+                        <option value="price-low">Price (lowest first)</option>
+                        <option value="price-high">Price (highest first)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="chips" id="service-chips" role="group" aria-label="Filter by type of service"></div>
+            <p class="result-count" id="service-count" role="status"></p>
+
+            <ul class="service-grid" id="service-grid">
+                <li class="service-card"><p class="tag">Procedures &amp; travel</p><h3>Adult and child circumcision</h3><p class="desc">Circumcision for adults and children, with aftercare advice.</p><p class="price">From R1 250</p><p><a href="enquiry.html?service=circumcision#enquiry-form">Enquire about Adult and child circumcision</a></p></li>
+                <li class="service-card"><p class="tag">Mother &amp; child</p><h3>Antenatal care</h3><p class="desc">Regular check-ups and support for you and your baby during pregnancy.</p><p class="price">From R750</p><p><a href="enquiry.html?service=antenatal-care#enquiry-form">Enquire about Antenatal care</a></p></li>
+                <li class="service-card"><p class="tag">Mother &amp; child</p><h3>Baby wellness</h3><p class="desc">Routine check-ups to keep your baby healthy and growing well.</p><p class="price">From R150</p><p><a href="enquiry.html?service=baby-wellness#enquiry-form">Enquire about Baby wellness</a></p></li>
+                <li class="service-card"><p class="tag">Screening &amp; tests</p><h3>Blood pressure test</h3><p class="desc">A quick check of your blood pressure.</p><p class="price">From R50</p><p><a href="enquiry.html?service=blood-pressure#enquiry-form">Enquire about Blood pressure test</a></p></li>
+                <li class="service-card"><p class="tag">Screening &amp; tests</p><h3>Cholesterol test</h3><p class="desc">A simple test to check your cholesterol level.</p><p class="price">From R100</p><p><a href="enquiry.html?service=cholesterol#enquiry-form">Enquire about Cholesterol test</a></p></li>
+                <li class="service-card"><p class="tag">Everyday care</p><h3>Consultation</h3><p class="desc">See a clinician about a health concern, get advice, or ask for a check-up.</p><p class="price">From R400</p><p><a href="enquiry.html?service=consultation#enquiry-form">Enquire about Consultation</a></p></li>
+                <li class="service-card"><p class="tag">Mother &amp; child</p><h3>Family planning</h3><p class="desc">Confidential advice and support to help you choose a family planning method.</p><p class="price">From R150</p><p><a href="enquiry.html?service=family-planning#enquiry-form">Enquire about Family planning</a></p></li>
+                <li class="service-card"><p class="tag">Screening &amp; tests</p><h3>Glucose test</h3><p class="desc">A simple test to check your blood sugar level.</p><p class="price">From R50</p><p><a href="enquiry.html?service=glucose#enquiry-form">Enquire about Glucose test</a></p></li>
+                <li class="service-card"><p class="tag">Screening &amp; tests</p><h3>HIV testing and counselling</h3><p class="desc">Confidential HIV testing with counselling before and after the test.</p><p class="price">From R100</p><p><a href="enquiry.html?service=hiv-testing#enquiry-form">Enquire about HIV testing and counselling</a></p></li>
+                <li class="service-card"><p class="tag">Everyday care</p><h3>Nebulizer treatment</h3><p class="desc">Breathing treatment for wheezing and asthma-type symptoms, given under supervision.</p><p class="price">From R250</p><p><a href="enquiry.html?service=nebulizer#enquiry-form">Enquire about Nebulizer treatment</a></p></li>
+                <li class="service-card"><p class="tag">Procedures &amp; travel</p><h3>PDP assessment</h3><p class="desc">Medical assessment for a professional driving permit (PDP).</p><p class="price">From R150</p><p><a href="enquiry.html?service=pdp-assessment#enquiry-form">Enquire about PDP assessment</a></p></li>
+                <li class="service-card"><p class="tag">Screening &amp; tests</p><h3>Pap smear and lab</h3><p class="desc">A cervical screening test, with the sample sent to a laboratory.</p><p class="price">From R450</p><p><a href="enquiry.html?service=pap-smear#enquiry-form">Enquire about Pap smear and lab</a></p></li>
+                <li class="service-card"><p class="tag">Mother &amp; child</p><h3>Postnatal care</h3><p class="desc">Care and advice for you and your newborn after the birth.</p><p class="price">From R300</p><p><a href="enquiry.html?service=postnatal-care#enquiry-form">Enquire about Postnatal care</a></p></li>
+               
+                <li class="service-card"><p class="tag">Everyday care</p><h3>Vitamin injections</h3><p class="desc">Vitamin injections given by a nurse.</p><p class="price">From R100</p><p><a href="enquiry.html?service=vitamin-injection#enquiry-form">Enquire about Vitamin injections</a></p></li>
+                <li class="service-card"><p class="tag">Screening &amp; tests</p><h3>Wellness assessment</h3><p class="desc">A broad health check to see where you stand. Ask us about wellness days for your workplace.</p><p class="price">From R500</p><p><a href="enquiry.html?service=wellness-assessment#enquiry-form">Enquire about Wellness assessment</a></p></li>
+                <li class="service-card"><p class="tag">Everyday care</p><h3>Wound care</h3><p class="desc">Cleaning, dressing and follow-up care for cuts and other wounds.</p><p class="price">From R150</p><p><a href="enquiry.html?service=wound-care#enquiry-form">Enquire about Wound care</a></p></li>
+            </ul>
+            <div class="empty-state" id="service-empty" hidden>
+                <p>No services match your search. Try a different word, or clear the search to see everything.</p>
+                <button class="btn btn-primary" type="button" id="service-reset">Clear search and filters</button>
+            </div>
+            <p class="fine-print">Prices are starting amounts in rand and may change depending on what you need on the day. For an estimate that fits your situation, <a href="enquiry.html">make an enquiry</a>.</p>
+        </section>
+
+        <dialog id="service-dialog" aria-labelledby="dlg-title">
+            <div class="dialog-body">
+                <button class="dialog-close" type="button" aria-label="Close details">&times;</button>
+                <p class="tag" id="dlg-category"></p>
+                <h2 id="dlg-title"></h2>
+                <p id="dlg-text"></p>
+                <dl class="detail-list">
+                    <dt>Price</dt><dd id="dlg-price"></dd>
+                    <dt>Time</dt><dd id="dlg-time"></dd>
+                    <dt>Booking</dt><dd id="dlg-booking"></dd>
+                </dl>
+                <a class="btn btn-primary" id="dlg-enquire" href="enquiry.html">Enquire about this service</a>
+            </div>
+        </dialog>
+    </main>
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h2>Nebusiwe Wellness Centre</h2>
+                <p>Accessible, affordable primary healthcare for individuals, families and businesses in Springs and the communities around it.</p>
+            </div>
+            <div>
+                <h2>Explore</h2>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Get in touch</h2>
+                <ul>
+                    <li><a href="tel:+27116343030">011 634 3030</a></li>
+                    <li><a href="mailto:busiwane@gmail.com">busiwane@gmail.com</a></li>
+                    <li>Mon to Fri 08:00 to 17:00<br>Sat, Sun and public holidays 09:00 to 13:00</li>
+                </ul>
+                <p class="share">Share this page:
+                    <a data-share="facebook" href="https://www.facebook.com/sharer/sharer.php" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a data-share="whatsapp" href="https://wa.me/" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                    <a data-share="x" href="https://twitter.com/intent/tweet" target="_blank" rel="noopener noreferrer">X</a>
+                </p>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 Nebusiwe Wellness Centre &middot; ST10531223</p>
+    </footer>
+    <script src="js/data.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/services.js" defer></script>
+</body>
+</html>

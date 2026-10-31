@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en-ZA" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Enquire About a Service | Nebusiwe Wellness Centre</title>
+    <meta name="description" content="Ask about a clinic service in Springs and get an estimated cost and availability straight away. Nebusiwe Wellness Centre enquiry form.">
+    <meta name="theme-color" content="#2f6f4f">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://cdnjs.cloudflare.com; img-src 'self' data: https://tile.openstreetmap.org https://*.tile.openstreetmap.org; media-src 'self'; connect-src 'self' https://formspree.io; object-src 'none'; base-uri 'self'; form-action 'self' mailto: https://formspree.io">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Nebusiwe Wellness Centre">
+    <meta property="og:title" content="Enquire About a Service | Nebusiwe Wellness Centre">
+    <meta property="og:description" content="Ask about a clinic service in Springs and get an estimated cost and availability straight away. Nebusiwe Wellness Centre enquiry form.">
+    <meta property="og:image" content="https://www.example.com/images/doctor-examining-patient.webp">
+    <meta property="og:locale" content="en_ZA">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header>
+        <a class="brand" href="home.html" aria-label="Nebusiwe Wellness Centre, home">
+            <img src="images/logo.webp" alt="Nebusiwe Wellness Centre logo" width="108" height="44">
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav id="site-nav" aria-label="Main">
+                <a href="home.html">Home</a>
+                <a href="about.html">About us</a>
+                <a href="services.html">Services</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="enquiry.html" aria-current="page">Enquiry</a>
+                <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main id="main">
+        <div class="page-head">
+            <h1>Enquire about a service</h1>
+            <p class="lead">Choose a service, the number of people and when you would like to come. We will show you an estimated cost and whether we can see you, straight away.</p>
+        </div>
+
+        <section class="section form-layout" aria-label="Enquiry form">
+            <div>
+                <div class="form-card">
+                    <form id="enquiry-form" action="https://formspree.io/f/YOUR_FORM_ID" method="post">
+                        <div class="form-summary" role="alert" tabindex="-1" hidden></div>
+                        <div class="form-grid">
+                    <div class="field">
+                        <label for="enq-name">Full name <span class="req" aria-hidden="true">*</span></label>
+                        <input type="text" id="enq-name" name="name" autocomplete="name" required minlength="2" maxlength="60" data-validate data-rule="name" data-label="your full name" data-missing="Please enter your full name." aria-describedby="enq-name-error">
+                        <p class="field-error" id="enq-name-error" hidden></p>
+                    </div>
+                    <div class="field">
+                        <label for="enq-email">Email address <span class="req" aria-hidden="true">*</span></label>
+                        <input type="email" id="enq-email" name="email" autocomplete="email" required maxlength="120" data-validate data-label="your email address" data-missing="Please enter your email address so we can reply." aria-describedby="enq-email-error">
+                        <p class="field-error" id="enq-email-error" hidden></p>
+                    </div>
+                    <div class="field">
+                        <label for="enq-phone">Phone number <span class="hint-inline">(optional)</span></label>
+                        <input type="tel" id="enq-phone" name="phone" autocomplete="tel" inputmode="tel" pattern="(\+27\s?|0)[1-9][0-9]\s?[0-9]{3}\s?[0-9]{4}" data-validate data-label="your phone number" data-pattern-msg="Enter a South African number, like 082 123 4567 or +27 82 123 4567." aria-describedby="enq-phone-error enq-phone-hint">
+                        <p class="hint" id="enq-phone-hint">South African number, for example 082 123 4567.</p>
+                        <p class="field-error" id="enq-phone-error" hidden></p>
+                    </div>
+                    <div class="field">
+                        <label for="enq-people">Number of people <span class="req" aria-hidden="true">*</span></label>
+                        <input type="number" id="enq-people" name="people" value="1" min="1" max="10" step="1" inputmode="numeric" required data-validate data-label="the number of people" data-missing="Enter how many people need the service." aria-describedby="enq-people-error enq-people-hint">
+                        <p class="hint" id="enq-people-hint">Between 1 and 10. We use this to work out the estimate.</p>
+                        <p class="field-error" id="enq-people-error" hidden></p>
+                    </div>
+                    <div class="field full">
+                        <label for="enq-service">Service you are asking about <span class="req" aria-hidden="true">*</span></label>
+                        <select id="enq-service" name="service" required data-validate data-label="a service" data-missing="Please choose a service." aria-describedby="enq-service-error"><option value="">Choose a service</option></select>
+                        <p class="field-error" id="enq-service-error" hidden></p>
+                    </div>
+                    <div class="field">
+                        <label for="enq-date">Preferred date <span class="req" aria-hidden="true">*</span></label>
+                        <input type="date" id="enq-date" name="date" required data-validate data-rule="date" data-label="a preferred date" data-missing="Please choose a date." aria-describedby="enq-date-error">
+                        <p class="field-error" id="enq-date-error" hidden></p>
+                    </div>
+                    <div class="field">
+                        <label for="enq-time">Preferred time <span class="req" aria-hidden="true">*</span></label>
+                        <select id="enq-time" name="time" required data-validate data-label="a time" data-missing="Please choose a time." aria-describedby="enq-time-error enq-time-hint"><option value="">Choose a date first</option></select>
+                        <p class="hint" id="enq-time-hint">Slots match our opening hours for the day you pick.</p>
+                        <p class="field-error" id="enq-time-error" hidden></p>
+                    </div>
+                    <div class="field full">
+                        <label for="enq-message">Your question <span class="req" aria-hidden="true">*</span></label>
+                        <textarea id="enq-message" name="message" rows="5" required minlength="10" maxlength="500" data-validate data-counter data-label="your question" data-missing="Please tell us what you would like to know." aria-describedby="enq-message-error enq-message-hint"></textarea>
+                        <p class="hint" id="enq-message-hint"><span id="enq-message-counter" aria-live="polite"></span></p>
+                        <p class="field-error" id="enq-message-error" hidden></p>
+                    </div>
+                    <div class="field check full">
+                        <input type="checkbox" id="enq-consent" name="consent" required data-validate data-label="consent" data-missing="Please tick the box so we may use your details to reply." aria-describedby="enq-consent-error">
+                        <label for="enq-consent">I agree that Nebusiwe Wellness Centre may use these details to reply to my enquiry.</label>
+                        <p class="field-error" id="enq-consent-error" hidden></p>
+                    </div>
+                            <div class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+                        </div>
+                        <button class="btn btn-primary" type="submit">Get my estimate</button>
+                        <p class="form-status" role="status" aria-live="polite"></p>
+                    </form>
+                    <noscript><p class="notice">This form needs JavaScript. Please <a href="contact.html">contact us</a> or call 011 634 3030 instead.</p></noscript>
+                </div>
+                <section id="enquiry-response" class="form-card response-panel" aria-live="polite" hidden></section>
+            </div>
+            <aside>
+                <div class="aside-box">
+                    <table class="hours">
+                <caption>Opening hours (South African time)</caption>
+                <tbody>
+                    <tr data-days="1,2,3,4,5"><th scope="row">Monday to Friday</th><td>08:00 to 17:00</td></tr>
+                    <tr data-days="0,6"><th scope="row">Saturday and Sunday</th><td>09:00 to 13:00</td></tr>
+                    <tr><th scope="row">Public holidays</th><td>09:00 to 13:00</td></tr>
+                </tbody>
+            </table>
+                </div>
+                <div class="aside-box">
+                    <h2>Prefer to talk?</h2>
+                    <p>Call us on <a href="tel:+27116343030">011 634 3030</a> or see our <a href="contact.html">contact page</a> for both branches.</p>
+                    <p>Not sure which service you need? Browse <a href="services.html">all services</a> first.</p>
+                </div>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h2>Nebusiwe Wellness Centre</h2>
+                <p>Accessible, affordable primary healthcare for individuals, families and businesses in Springs and the communities around it.</p>
+            </div>
+            <div>
+                <h2>Explore</h2>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="enquiry.html">Enquiry</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Get in touch</h2>
+                <ul>
+                    <li><a href="tel:+27116343030">011 634 3030</a></li>
+                    <li><a href="mailto:busiwane@gmail.com">busiwane@gmail.com</a></li>
+                    <li>Mon to Fri 08:00 to 17:00<br>Sat, Sun and public holidays 09:00 to 13:00</li>
+                </ul>
+                <p class="share">Share this page:
+                    <a data-share="facebook" href="https://www.facebook.com/sharer/sharer.php" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    <a data-share="whatsapp" href="https://wa.me/" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                    <a data-share="x" href="https://twitter.com/intent/tweet" target="_blank" rel="noopener noreferrer">X</a>
+                </p>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 Nebusiwe Wellness Centre &middot; ST10531223</p>
+    </footer>
+    <script src="js/data.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/forms.js" defer></script>
+</body>
+</html>
