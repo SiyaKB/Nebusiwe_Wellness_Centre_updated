@@ -30,5 +30,5 @@ Changelog:
 Added a stylesheet (CSS/style.css) and linked it to all five original pages, replacing the old inline styling. It gives the site a consistent green/off-white wellness look, a proper header/nav layout, styled images/video/map, a footer, and a mobile-friendly responsive tweak. Added a new Enquiries page (enquiries.html) with a form (name, email, phone, service dropdown, message) that opens the visitor's email app pre-filled to send the enquiry — no backend needed, but it does require the visitor to have an email client set up. Updated navigation — every page now has an "Enquiries" link between Gallery and Contact.
 
 Site map
+<img width="727" height="307" alt="image" src="https://github.com/user-attachments/assets/3fc303d0-f56e-4949-9d01-36407a35f347" />
 
-image
